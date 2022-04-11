@@ -28,6 +28,9 @@ int main() {
 
 	cout << "Сумма лекарств в рецепте доктора "<< receipt.getReceiptDcName()<< " на дату "<<receipt.getDate() << " : " << receipt.getPrice() << endl;
 
+	receipt.removeMedicine(v[0]);
+
+	cout << "Сумма лекарств в рецепте доктора " << receipt.getReceiptDcName() << " на дату " << receipt.getDate() << " : " << receipt.getPrice() << endl;
 
 	return 0;
 }
